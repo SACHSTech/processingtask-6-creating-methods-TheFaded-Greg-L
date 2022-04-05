@@ -32,13 +32,13 @@ public class Sketch extends PApplet {
   public void draw() {
 	  
     // bricks
-    bricks(100, 200);
-    bricks(300, 400);
+    bricks(150, 250);
+    bricks(350, 500);
     bricks(500, 100);
     bricks(600, 600);
 
     // flowers
-    flower(400, 400, 50, 16, 255, 10, 153, 0, 255, 255);
+    flower(200, 200, 50, 16, 255, 10, 153, 0, 255, 255);
     flower(200, 600, 100, 8, 99, 79, 194, 214, 189, 45);
     flower(600, 200, 30, 32, 45, 214, 138, 214, 45, 45);
 
