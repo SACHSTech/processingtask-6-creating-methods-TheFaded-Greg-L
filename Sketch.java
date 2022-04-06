@@ -53,13 +53,13 @@ public class Sketch extends PApplet {
   
 
   /**
-* Draws a brick block dependant on the location given.
-*
-* @param fltBrickX  The X position of the brick blocks.
-* @param fltBrickY  The Y position of the brick blocks. 
-* @return N/A
-* @author G. Lui
-*/
+  * Draws a brick block dependant on the location given.
+  *
+  * @param fltBrickX  The X position of the brick blocks.
+  * @param fltBrickY  The Y position of the brick blocks. 
+  * @return N/A
+  * @author G. Lui
+  */
   public void bricks(float fltBrickX, float fltBrickY){
 
     //brick outline
@@ -121,21 +121,21 @@ public class Sketch extends PApplet {
   }
 
   /**
-* Draws a flower with all customizational features on the location given.
-*
-* @param fltFlowerX The X position of the flowers.
-* @param fltFlowerY The Y position of the flowers.
-* @param intFlowerSize The size of the flowers.
-* @param intPedalNum The # of pedals on the flowers.
-* @param intPedalRed The red data value of the pedals.
-* @param intPedalGreen The green data value of the pedals.
-* @param intPedalBlue The blue data value of the pedals.
-* @param intPistilRed The red data value of the pistil (center dot).
-* @param intPistilGreen The green data value of the pistil (center dot).
-* @param intPistilBlue The blue data value of the pistil (center dot).
-* @return N/A
-* @author Name of Author
-*/
+  * Draws a flower with all customizational features on the location given.
+  *
+  * @param fltFlowerX The X position of the flowers.
+  * @param fltFlowerY The Y position of the flowers.
+  * @param intFlowerSize The size of the flowers.
+  * @param intPedalNum The # of pedals on the flowers.
+  * @param intPedalRed The red data value of the pedals.
+  * @param intPedalGreen The green data value of the pedals.
+  * @param intPedalBlue The blue data value of the pedals.
+  * @param intPistilRed The red data value of the pistil (center dot).
+  * @param intPistilGreen The green data value of the pistil (center dot).
+  * @param intPistilBlue The blue data value of the pistil (center dot).
+  * @return N/A
+  * @author Name of Author
+  */
   public void flower(float fltFlowerX, float fltFlowerY, int intFlowerSize, int intPedalNum, int intPedalRed, int intPedalGreen, int intPedalBlue, int intPistilRed, int intPistilGreen, int intPistilBlue){
 
     // saves original position (0, 0)
@@ -165,13 +165,13 @@ public class Sketch extends PApplet {
   }
 
   /**
-* Draws a grass block based on the location given.
-*
-* @param fltGroundX  The X position of the grass block.
-* @param fltGroundY The Y position of the grass block.
-* @return N/A
-* @author G. Lui
-*/
+  * Draws a grass block based on the location given.
+  *
+  * @param fltGroundX  The X position of the grass block.
+  * @param fltGroundY The Y position of the grass block.
+  * @return N/A
+  * @author G. Lui
+  */
   public void ground(float fltGroundX, float fltGroundY){
 
     // dirt
@@ -194,14 +194,14 @@ public class Sketch extends PApplet {
     ellipse(fltGroundX + 70, fltGroundY + 60, 10, 10);
   }
 
-/**
-* Checks to see if the grass is allowed to be drawn.
-*
-* @param intBrickNum The # of bricks drawn in the program.
-* @param intFlowerNum The # of flowers drawn in the program.
-* @return True or False. If # of Bricks > then # of Flowers
-* @author G. Lui
-*/
+  /**
+  * Checks to see if the grass is allowed to be drawn.
+  *
+  * @param intBrickNum The # of bricks drawn in the program.
+  * @param intFlowerNum The # of flowers drawn in the program.
+  * @return True or False. If # of Bricks > then # of Flowers
+  * @author G. Lui
+  */
   public boolean boolDrawGrass(int intBrickNum, int intFlowerNum){
 
     // returns true if the number of bricks is greater than flowers, otherwise returns false.
