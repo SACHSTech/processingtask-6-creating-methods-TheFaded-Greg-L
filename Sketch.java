@@ -50,7 +50,16 @@ public class Sketch extends PApplet {
   }
   
   // define other methods down here.
-  // draw bricks
+  
+
+  /**
+* Draws a brick block dependant on the location given.
+*
+* @param fltBrickX  The X position of the brick blocks.
+* @param fltBrickY  The Y position of the brick blocks. 
+* @return N/A
+* @author G. Lui
+*/
   public void bricks(float fltBrickX, float fltBrickY){
 
     //brick outline
@@ -111,7 +120,22 @@ public class Sketch extends PApplet {
     intBrickCounter += 1;
   }
 
-  // draw flower
+  /**
+* Draws a flower with all customizational features on the location given.
+*
+* @param fltFlowerX The X position of the flowers.
+* @param fltFlowerY The Y position of the flowers.
+* @param intFlowerSize The size of the flowers.
+* @param intPedalNum The # of pedals on the flowers.
+* @param intPedalRed The red data value of the pedals.
+* @param intPedalGreen The green data value of the pedals.
+* @param intPedalBlue The blue data value of the pedals.
+* @param intPistilRed The red data value of the pistil (center dot).
+* @param intPistilGreen The green data value of the pistil (center dot).
+* @param intPistilBlue The blue data value of the pistil (center dot).
+* @return N/A
+* @author Name of Author
+*/
   public void flower(float fltFlowerX, float fltFlowerY, int intFlowerSize, int intPedalNum, int intPedalRed, int intPedalGreen, int intPedalBlue, int intPistilRed, int intPistilGreen, int intPistilBlue){
 
     // saves original position (0, 0)
@@ -140,30 +164,44 @@ public class Sketch extends PApplet {
     intFlowerCounter += 1;
   }
 
-  // draw grass
-  public void ground(float groundX, float groundY){
+  /**
+* Draws a grass block based on the location given.
+*
+* @param fltGroundX  The X position of the grass block.
+* @param fltGroundY The Y position of the grass block.
+* @return N/A
+* @author G. Lui
+*/
+  public void ground(float fltGroundX, float fltGroundY){
 
     // dirt
     stroke(0, 0);
     fill(201, 134, 87);
-    rect(groundX, groundY, 100, 100);
+    rect(fltGroundX, fltGroundY, 100, 100);
 
     // grass
     fill(18, 156, 11);
-    rect(groundX, groundY, 100, 5);
-    rect(groundX, groundY + 5, 100, 5);
-    rect(groundX + 5, groundY + 10, 90, 5);
-    rect(groundX + 15, groundY + 15, 70, 5);
-    rect(groundX + 20, groundY + 20, 60, 5);
-    rect(groundX + 40, groundY + 25, 20, 5);
+    rect(fltGroundX, fltGroundY, 100, 5);
+    rect(fltGroundX, fltGroundY + 5, 100, 5);
+    rect(fltGroundX + 5, fltGroundY + 10, 90, 5);
+    rect(fltGroundX + 15, fltGroundY + 15, 70, 5);
+    rect(fltGroundX + 20, fltGroundY + 20, 60, 5);
+    rect(fltGroundX + 40, fltGroundY + 25, 20, 5);
 
     // particles in the ground
     fill(230, 226, 177);
-    ellipse(groundX + 30, groundY + 80, 25, 25);
-    ellipse(groundX + 70, groundY + 60, 10, 10);
+    ellipse(fltGroundX + 30, fltGroundY + 80, 25, 25);
+    ellipse(fltGroundX + 70, fltGroundY + 60, 10, 10);
   }
 
-  // check to see if the grass is drawn
+/**
+* Checks to see if the grass is allowed to be drawn.
+*
+* @param intBrickNum The # of bricks drawn in the program.
+* @param intFlowerNum The # of flowers drawn in the program.
+* @return True or False. If # of Bricks > then # of Flowers
+* @author G. Lui
+*/
   public boolean boolDrawGrass(int intBrickNum, int intFlowerNum){
 
     // returns true if the number of bricks is greater than flowers, otherwise returns false.
